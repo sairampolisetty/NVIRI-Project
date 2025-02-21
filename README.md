@@ -1,67 +1,69 @@
-# Employee Management System 🚀
+# NVIRI-Project (Employee Management)
 
-This is a **Full-Stack Web Application** built using **React.js (Frontend), Spring Boot (Backend), and PostgreSQL (Database)**.  
-It allows users to **Add, Edit, Delete, and View Employees** in a responsive UI.
+## Overview
 
-## ✨ Features
-- 🟢 Add new employees  
-- 🟡 Update employee details  
-- 🔴 Delete employees  
-- 🔍 Search employees  
-- 📊 View all employees in a paginated table  
+It is a full-stack web application designed to manage employee information. It allows users to add, edit, delete, and search employee records.
 
----
+## Features
 
-## 🛠 Tech Stack
-### **Frontend**
-- React.js (Class Components)
-- React-Table (for table rendering)
-- Axios (for API calls)
-- Vite (for development server)
+* Add new employees with name, manager, and salary details.
+* View a list of employees with pagination.
+* Search for employees by name.
+* Edit existing employee records.
+* Delete employee records.
 
-### **Backend**
-- Spring Boot
-- Spring Data JPA (Hibernate)
-- PostgreSQL
-- REST API
+## Technologies Used
 
----
+* **Frontend:**
+    * React.js
+* **Backend:**
+    * Spring Boot (Java)
+* **Database:**
+    * PostgreSQL
 
-## 📥 Installation & Setup
+## Getting Started
 
-### **1️⃣ Clone the Repository**
+### Prerequisites
 
-git clone https://github.com/yourusername/NVIRI-Project.git
-cd NVIRI-Project
+* Java Development Kit (JDK) [Specify version]
+* Maven or Gradle (for building the Spring Boot application)
+* PostgreSQL (installed and running)
+* Node.js and npm (for the React frontend)
 
-2️⃣ Install Dependencies
-🖥️ Frontend (React)
+### Installation
 
-cd employee-web
-npm install
+1.  Clone the repository:
 
-⚙️ Backend (Spring Boot)
-Open the employee-service folder in Spring Tool Suite (STS) or IntelliJ.
-Install dependencies using Maven:
+    ```bash
+    git clone [https://github.com/sairampolisetty/NVIRI-Project.git](https://www.google.com/search?q=https://github.com/sairampolisetty/NVIRI-Project.git)
+    cd NVIRI-Project
+    ```
 
-mvn clean install
+2.  **Backend (Spring Boot):**
+    * Navigate to the Spring Boot backend directory.
+    * Configure your PostgreSQL database connection in the `application.properties` or `application.yml` file.
+    * Build the application using Maven or Gradle.
+    * Run the Spring Boot application.
 
+3.  **Frontend (React):**
+    * Navigate to the React frontend directory (`client`).
+    * Install dependencies: `npm install` or `yarn install`.
+    * Start the React application: `npm start`.
 
-🚀 Running the Project
-1️⃣ Start the Backend (Spring Boot)
-Run the Spring Boot application:
+4.  Open your browser and navigate to `http://localhost:3000` (or the appropriate port).
 
+## API Endpoints
 
-mvn spring-boot:run
-OR
-Run it directly from your IDE.
+[**Document your Spring Boot REST API endpoints here. Include the HTTP method, URL, request parameters, and response format.**]
 
-2️⃣ Start the Frontend (React)
-
-cd employee-web
-npm start
-
-This will open the project at: http://localhost:5173/ (Vite default port).
-
-Thank you. 
-Reach out to me if you have further issues.
+* **GET /api/employees:**
+    * Description: Retrieves a list of all employees.
+    * Request: None
+    * Response: JSON array of employee objects.
+* **POST /api/employees:**
+    * Description: Adds a new employee.
+    * Request: JSON object containing employee details.
+    * Response: JSON object representing the created employee.
+  
+This is the picture of the project
+![Screenshot 2025-02-21 142113](https://github.com/user-attachments/assets/be964a0e-9cc7-4129-9872-72bc64861a94)
