@@ -1,0 +1,185 @@
+/* Remove browser default margin & padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set full black background */
+body, html {
+  background-color: black;
+  color: white; /* Optional: Set text color to white */
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* General container styling */
+.main-container {
+  padding: 30px;
+/*max-width: 800px;*/
+  background-color: #111;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  width: 90vw;
+  height: auto;
+}
+
+/* Heading */
+h1 {
+  color: #00aaff;
+  text-align: center;
+  font-size: 28px;
+  padding-bottom: 18px;
+}
+
+/* Add panel */
+.add-panel {
+  width: 90%;
+  padding: 10px;
+  background-color: #222;
+  border-radius: 8px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+/* Input fields */
+.searchinput, .addpanelinput {
+  border: 1px solid #c4ddea;
+  border-radius: 5px;
+  height: 30px;
+  width: 200px;
+  padding: 5px;
+  margin-left: 10px;
+  background-color: #252424;
+  color: white;
+}
+
+.searchinput{
+  width: 500px;
+  height: 35px;
+}
+
+label{
+  color: white;
+}
+
+.idx{
+  color: white;
+}
+/* Buttons */
+.addBtn, .cancelBtn, .editBtn, .deleteBtn, .pageBtn {
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+/* Add and Cancel buttons */
+.addBtn {
+  background-color: #007bff;
+  color: white;
+}
+
+.cancelBtn {
+  background-color: #dc3545;
+  color: white;
+}
+.addBtn, .cancelBtn{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  height: 50%;
+  align-self: center;
+  margin-left: 14px;
+  margin-top: 20px;
+
+}
+/* Edit and Delete buttons */
+.editBtn {
+  background-color: #ffcc00;
+  color: black;
+}
+
+.deleteBtn {
+  background-color: #ff4444;
+  color: white;
+}
+
+/* Hover Effects */
+.addBtn:hover { background-color: #0056b3; }
+.cancelBtn:hover { background-color: #b22a3a; }
+.editBtn:hover { background-color: #d4a500; }
+.deleteBtn:hover { background-color: #cc0000; }
+
+/* Table styling */
+.table {
+  width: 90%;
+  margin-top: 10px;
+  border-collapse: collapse;
+  text-align: center;
+  background-color: #222;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+th, td {
+  padding: 5px;
+  border: 1px solid #00aaff;
+  color: white;
+}
+
+th {
+  background-color: #00aaff;
+  color: black;
+}
+
+tr:nth-child(even) {
+  background-color: #333;
+}
+
+/* Pagination */
+.pagediv {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.pageBtn {
+  background-color: #007bff;
+  color: white;
+}
+
+.pageBtn:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .h1{
+    font-size: 16px;
+  }
+  .add-panel {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .searchinput, .addpanelinput {
+    width: 100%;
+  }
+  
+  .table {
+    font-size: 14px;
+    width: 80%;
+  }
+
+  .editBtn, .deleteBtn {
+    padding: 6px 10px;
+    font-size: 12px;
+  }
+}
